@@ -134,11 +134,18 @@ code {
   border: 1px solid #439a97;
   box-shadow: 5px 5px 5px 5px#439a97;
 }
-.allBatches1 {
+.allBatches {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+.allBatches-components {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 30%;
 }
 
 .footer {

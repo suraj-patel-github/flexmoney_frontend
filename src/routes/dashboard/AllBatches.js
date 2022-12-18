@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import AuthContext from '../../context/AuthContext'
 import SingleBatch from '../../Components/Dashboard/SingleBatch'
+import Footer from '../../Components/Landing/Footer'
+import DashNavbar from '../../Components/Dashboard/DashNavbar'
 
 const AllBatches = () => {
   let { allBatch, batchDetail } = useContext(AuthContext)
@@ -8,6 +10,8 @@ const AllBatches = () => {
     allBatch()
   }, [])
   return (
+      <>
+    <DashNavbar/>      
     <div className='allBatches'>
       {batchDetail &&
         batchDetail.map((batch) => (
@@ -20,6 +24,8 @@ const AllBatches = () => {
           />
         ))}
     </div>
+          <Footer/>
+      </>
   )
 }
 
